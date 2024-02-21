@@ -1,4 +1,4 @@
-ESP-IDF UART INTERRUPT Example
+ESP32 UART INTERRUPT Example
 ====================
 
 Tested on a ESP32-S3, compiled with ESP-IDF 5.3
