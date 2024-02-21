@@ -6,11 +6,11 @@
 #include "soc/interrupts.h"
 #include "hal/uart_hal.h"
 
-#define U0TX_GPIO			(43)		// ESP32-S3
-#define U0RX_GPIO			(44)		// ESP32-S3
-#define UART_NUM			UART_NUM_0	// ESP32-S3
-#define RXFULL_THRESHOLD		(12)		// n of expected rx bytes.
-#define RXBUF_SIZE			(256)		// 256 minimum
+#define U0TX_GPIO		(43)		// ESP32-S3
+#define U0RX_GPIO		(44)		// ESP32-S3
+#define UART_NUM		UART_NUM_0	// ESP32-S3
+#define RXFULL_THRESHOLD	(12)		// n of expected rx bytes.
+#define RXBUF_SIZE		(256)		// 256 minimum
 
 uint16_t rx_fifo_len = 0;
 uint8_t rxbuf[RXFULL_THRESHOLD+1] = {0};
