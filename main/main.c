@@ -16,7 +16,7 @@ uint16_t rx_fifo_len = 0;
 uint8_t rxbuf[RXFULL_THRESHOLD+1] = {0};
 
 
-void uart_task(void *pvParameter)
+void uart_task(void *arg)
 {
 	printf("Received %d bytes: ", rx_fifo_len);
 	for(uint16_t i=0; i < rx_fifo_len; i++){
